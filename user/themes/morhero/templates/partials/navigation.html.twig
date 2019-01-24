@@ -1,0 +1,17 @@
+<div id="nav-trigger">#</div>
+<nav id="nav">
+	<div class="flex justify-between">
+		<div class="nav-group">
+			<div class="inner-wrapper flex">
+				
+				{% for page in pages.children.visible %}
+		            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+		            <div class="nav-element {{ current_page }}">
+		                <a href="{{ page.url }}">{{ page.menu }}</a>
+		            </div>
+		        {% endfor %}
+
+			</div>
+		</div>
+	</div>
+</nav>

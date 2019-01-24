@@ -1,0 +1,11 @@
+<footer>
+
+	{% set footer_collection = page.collection({ items: {'@page.children': '/footer/'}, 'limit': 5, 'order': {'by': 'date', 'dir': 'desc'}, 'pagination': true }) %}
+
+	{% for page in footer_collection %}
+
+        <div class="">
+            <a href="{{ page.url }}">{{ page.menu }}</a>
+        </div>
+    {% endfor %}
+</footer>

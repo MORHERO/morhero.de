@@ -1,0 +1,53 @@
+.intro {
+	display: none;
+	background-color: $main-color;
+	.inner {
+		position: relative;
+		max-width: 760px;
+		margin: 0 auto;
+		.text-block {
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+	#intro-canvas {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+}
+body[intro="1"] {
+	overflow: hidden;
+	.intro {
+		display: block;
+	}
+}
+
+header {
+	min-height: 300px;
+	text-align: center;
+}
+
+.teaser {
+	min-height: 300px;
+	text-align: center;
+	border:1px solid #FFF; // DEBUG PURPOS
+	.inner {
+		.text-box {
+
+		}
+	}
+}
+
+#project-list {
+	.project {
+		
+		a {
+			display: block;
+			color: $font-color;
+			text-decoration: none;
+			border: 1px #FFF solid;
+			padding: 0em 1em;
+		}
+	}
+}
