@@ -1,4 +1,0 @@
----
-intro_toggle: false
----
-
