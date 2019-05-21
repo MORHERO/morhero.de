@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:400,900&display=swap');
+
+$black_bg: #333;
+$font_color: #fff;
+$font: 'Yantramanav', sans-serif;
+
+$doc_width: 1980px;
+
+html, body {
+	margin:0;
+	background-color:$black_bg;
+	font-size:16px;
+	color:$font_color;
+}
+p, a, span, div, body {
+	font-family: $font;
+	font-weight: 400;
+}
+h1,h2,h3,h4,h5,.title {
+	font-family: $font;
+	font-weight: 900;
+}
+main {
+	max-width: $doc_width;
+	margin: 0 auto;
+	width: 100%;
+	// dev only
+	height: 2500px;
+}
+
+@import 'parts/header';
+@import 'parts/navigation';
+@import 'parts/footer';

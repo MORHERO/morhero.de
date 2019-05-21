@@ -1,0 +1,22 @@
+footer {
+    width: 100%;
+    .inner {
+        display: flex;
+        justify-content: flex-start;
+        max-width: $doc_width;
+        margin:0 auto;
+        .element {
+            padding: 1em;
+            .inner {
+
+                a {
+                    color: $font_color;
+                    text-decoration: none;
+                }
+                p {
+                    
+                }
+            }
+        }
+    }
+}

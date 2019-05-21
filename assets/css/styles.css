@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:400,900&display=swap");
+html, body {
+  margin: 0;
+  background-color: #333;
+  font-size: 16px;
+  color: #fff; }
+
+p, a, span, div, body {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, .title {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 900; }
+
+main {
+  max-width: 1980px;
+  margin: 0 auto;
+  width: 100%;
+  height: 2500px; }
+
+header {
+  width: 100%;
+  height: 500px; }
+  header .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    header .inner .title {
+      font-size: 12em;
+      text-shadow: 0px 0px 10px; }
+
+nav {
+  width: 100%;
+  background-color: #444; }
+  nav .inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1980px;
+    margin: 0 auto; }
+    nav .inner .element {
+      padding: 2em; }
+      nav .inner .element .inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        nav .inner .element .inner .dev_icon {
+          width: 6em;
+          height: 6em;
+          background-color: #FFF;
+          display: block;
+          color: #000; }
+        nav .inner .element .inner a {
+          font-size: 3em;
+          text-decoration: none;
+          color: #fff; }
+          nav .inner .element .inner a.active {
+            text-decoration: underline; }
+
+footer {
+  width: 100%; }
+  footer .inner {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1980px;
+    margin: 0 auto; }
+    footer .inner .element {
+      padding: 1em; }
+      footer .inner .element .inner a {
+        color: #fff;
+        text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */
