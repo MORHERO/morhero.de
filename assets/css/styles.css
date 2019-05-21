@@ -17,6 +17,7 @@ main {
   max-width: 1980px;
   margin: 0 auto;
   width: 100%;
+  padding: 3em 0em 3em;
   height: 2500px; }
 
 header {
@@ -33,7 +34,24 @@ header {
 
 nav {
   width: 100%;
-  background-color: #444; }
+  background-color: #444;
+  margin-top: 0;
+  transition: margin-top 300ms ease; }
+  nav.sticky {
+    position: fixed;
+    margin-top: -8em;
+    top: 0; }
+    nav.sticky:hover {
+      margin-top: 0; }
+    nav.sticky .inner .element {
+      padding-bottom: 1em; }
+      nav.sticky .inner .element .inner .dev_icon {
+        width: 6em;
+        height: 6em; }
+      nav.sticky .inner .element .inner p {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+        transition: font-size 300ms ease; }
   nav .inner {
     display: flex;
     justify-content: space-between;
@@ -44,18 +62,19 @@ nav {
       nav .inner .element .inner {
         display: flex;
         align-items: center;
-        flex-direction: column; }
+        flex-direction: column;
+        text-decoration: none; }
         nav .inner .element .inner .dev_icon {
           width: 6em;
           height: 6em;
           background-color: #FFF;
           display: block;
           color: #000; }
-        nav .inner .element .inner a {
+        nav .inner .element .inner p {
           font-size: 3em;
-          text-decoration: none;
+          margin: 0;
           color: #fff; }
-          nav .inner .element .inner a.active {
+          nav .inner .element .inner p.active {
             text-decoration: underline; }
 
 footer {

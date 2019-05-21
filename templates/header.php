@@ -1,8 +1,8 @@
 <?php
 	
 ?>
-<header>
+<header id="header">
 	<div class="inner">
-		<div class="title"><?php echo($page_title); ?></div>
+		<h1 class="title"><?php echo($page_title); ?></h1>
 	</div>
 </header>

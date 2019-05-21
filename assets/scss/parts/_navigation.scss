@@ -1,6 +1,32 @@
 nav {
     width: 100%;
     background-color: #444;
+    margin-top: 0;
+    transition: margin-top 300ms ease;
+    &.sticky {
+        position: fixed;
+        margin-top:-8em;
+        top: 0;
+        &:hover {
+            margin-top: 0;
+        }
+        .inner {
+            .element {
+                padding-bottom: 1em;
+                .inner {
+                    .dev_icon {
+                        width: 6em;
+                        height: 6em;
+                    }
+                    p {
+                        margin-top: 0.5em;
+                        font-size: 1.5em;
+                        transition: font-size 300ms ease;
+                    }
+                }
+            }
+        }
+    }
     .inner {
         display: flex;
         justify-content: space-between;
@@ -12,6 +38,7 @@ nav {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                text-decoration: none;
                 .dev_icon {
                     width: 6em;
                     height: 6em;
@@ -19,9 +46,9 @@ nav {
                     display: block;
                     color:#000;
                 }
-                a {
+                p {
                     font-size: 3em;
-                    text-decoration: none;
+                    margin:0;
                     color: $font_color;
                     &.active {
                         text-decoration: underline;

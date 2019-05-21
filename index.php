@@ -13,7 +13,10 @@ $page_title = "MORHERO";
 <body>
 	<?php include("templates/header.php"); ?>
 	<?php include("templates/navigation.php"); ?>
-	<main>aa</main>
+	<main id="content">aa
+
+	<a href="http://localhost/morhero.de/projects.php">Projects</a>
+	</main>
 	<?php include("templates/footer.php"); ?>
 	<?php include("templates/scripts.php"); ?>
 </body>

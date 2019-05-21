@@ -1,28 +1,34 @@
-<nav>
+<nav id="navigation">
 	<div class="inner">
 		<div class="element">
-			<div class="inner">
+			<a class="inner" href="http://localhost/morhero.de/">
 				<div class="dev_icon">ICON_HOME</div>
-				<a href="" class="active">Home</a>
-			</div>
+				<p class="active">Home</p>
+			</a>
 		</div>
 		<div class="element">
-			<div class="inner">
+			<a class="inner" href="#projects">
 				<div class="dev_icon">ICON_PROJECT</div>
-				<a href="">Projects</a>
-			</div>
+				<p>Projects</p>
+			</a>
 		</div >
 		<div class="element">
-			<div class="inner">
-				<div class="dev_icon">ICON_MONEY</div>
-				<a href="">Support</a>
-			</div>
+			<a class="inner" href="#social-media">
+				<div class="dev_icon">ICON_SOCIAL</div>
+				<p>Social Media</p>
+			</a>
 		</div>
 		<div class="element">
-			<div class="inner">
+			<a class="inner" href="#support">
+				<div class="dev_icon">ICON_MONEY</div>
+				<p>Support</p>
+			</a>
+		</div>
+		<div class="element">
+			<a class="inner" href="#contact">
 				<div class="dev_icon">ICON_CONTACT</div>
-				<a href="">Contact</a>
-			</div>
+				<p>Contact</p>
+			</a>
 		</div>
 	</div>
 </nav>
