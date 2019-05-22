@@ -3,6 +3,7 @@ nav {
     background-color: #444;
     margin-top: 0;
     transition: margin-top 300ms ease;
+    z-index: 100;
     &.sticky {
         position: fixed;
         margin-top:-8em;

@@ -2,10 +2,6 @@
 
 // INTRO
 #intro {
-    h2 {
-        font-size: 6em;
-        text-align: center;
-    }
     .inner {
         display: flex;
         justify-content: center;
@@ -25,8 +21,67 @@
             flex-basis: calc(50% - 2.5em);
             min-width: 500px;
             margin: 1em 2em 1em 0.5em;
-            img {
+            position: relative;
+            .head {
                 width: 100%;
+            }
+            .eye {
+                position: absolute;
+                border: 1px solid black;
+                &.left {
+                    top: 0px;
+                    left: 0px;
+                }
+                &.right {
+                    top: 0px;
+                    left: 100px;
+                }
+            }
+        }
+    }
+}
+
+//project-showcase
+#project-showcase {
+    .inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        .showcase {
+            display: flex;
+            justify-content: center;
+            
+            .imgbox {
+                flex-basis: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+            .textbox {
+                flex-basis: calc(60% - 1em);
+                padding-left: 1em;
+            }
+        }
+        .project-nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 2em;
+            .element {
+                height: 100px;
+                width: 100px;
+                padding:0.25em;
+                cursor:pointer;
+                &.active {
+                    background-color: #666!important;
+                }
+                &:hover {
+                    background-color: #444;
+                }
+                .wrap {
+                    img {
+                        width: 100%;
+                    }
+                }
             }
         }
     }

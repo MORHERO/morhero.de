@@ -16,6 +16,10 @@ h1,h2,h3,h4,h5,.title {
 	font-family: $font;
 	font-weight: 900;
 }
+.section-headline {
+	font-size: 6em;
+	text-align: center;
+}
 main {
 	max-width: $doc_width;
 	margin: 0 auto;
