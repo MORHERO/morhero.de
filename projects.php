@@ -17,12 +17,30 @@ $page_title = "PROJECTS";
 
         <section id="project-list">
 
-                <div class="element">
-                    <div class="inner">
-                        <h3>Project 1</h3>
-                        <p class="description">Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....</p>
+            <?php 
+                $project_list = array(
+                    array('name' => 'Project 1', 'content' => 'Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....'),
+                    array('name' => 'Project 2', 'content' => 'Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....'),
+                    array('name' => 'Project 3', 'content' => 'Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....'),
+                    array('name' => 'Project 4', 'content' => 'Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....'),
+                    array('name' => 'Project 5', 'content' => 'Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....'),
+                    array('name' => 'Project 6', 'content' => 'Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....'),
+                    array('name' => 'Project 7', 'content' => 'Lorem ipsum dolor sit amet! Bla bla thats a description text and i dont know what im doing here so help me please this is shit....')
+                );
+
+                foreach ($project_list as $key => $project) { ?>
+
+                    <div class="element">
+                        <a href="http://localhost/morhero.de/project_name/index.php">
+                            <div class="inner">
+                                <h3><?php echo($project['name']); ?></h3>
+                                <p class="description"><?php echo($project['content']); ?></p>
+                            </div>
+                        </a>
                     </div>
-                </div>
+                    
+                <?php } ?>
+                
 
         </section>
 

@@ -13,12 +13,12 @@ $page_title = "MORHERO";
 <body>
 	<?php include("templates/header.php"); ?>
 	<?php include("templates/navigation.php"); ?>
-	<main id="content">aa
+	<main id="content">
 		<?php include("templates/content/intro.php"); ?>
 
 		<section id="projects">
 			<div class="inner">
-
+				
 			</div>
 		</section>
 

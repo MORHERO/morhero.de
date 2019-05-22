@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:400,900&display=swap');
+@import 'parts/variables';
 
-$black_bg: #333;
-$font_color: #fff;
-$font: 'Yantramanav', sans-serif;
-
-$doc_width: 1980px;
 
 html, body {
 	margin:0;
 	background-color:$black_bg;
-	font-size:16px;
+	font-size:18px;
 	color:$font_color;
 }
 p, a, span, div, body {
@@ -25,8 +21,6 @@ main {
 	margin: 0 auto;
 	width: 100%;
 	padding:3em 0em 3em;
-	// dev only
-	height: 2500px;
 }
 
 @import 'parts/header';

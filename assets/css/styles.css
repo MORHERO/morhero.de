@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   background-color: #333;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff; }
 
 p, a, span, div, body {
@@ -17,8 +17,7 @@ main {
   max-width: 1980px;
   margin: 0 auto;
   width: 100%;
-  padding: 3em 0em 3em;
-  height: 2500px; }
+  padding: 3em 0em 3em; }
 
 header {
   width: 100%;
