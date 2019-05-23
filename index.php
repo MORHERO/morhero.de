@@ -47,8 +47,6 @@ $page_title = "MORHERO";
 			</div>
 		</section>
 
-		<?php include("templates/content/social-wall.php"); ?>
-
 		<section id="support">
 
 		</section>

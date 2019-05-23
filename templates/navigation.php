@@ -7,17 +7,17 @@
 			</a>
 		</div>
 		<div class="element">
+			<a class="inner" href="#intro">
+				<div class="dev_icon">ICON_ME</div>
+				<p>About me</p>
+			</a>
+		</div >
+		<div class="element">
 			<a class="inner" href="#projects">
 				<div class="dev_icon">ICON_PROJECT</div>
 				<p>Projects</p>
 			</a>
 		</div >
-		<div class="element">
-			<a class="inner" href="#social-media">
-				<div class="dev_icon">ICON_SOCIAL</div>
-				<p>Social Media</p>
-			</a>
-		</div>
 		<div class="element">
 			<a class="inner" href="#support">
 				<div class="dev_icon">ICON_MONEY</div>

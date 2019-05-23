@@ -58,4 +58,28 @@
       #project-showcase .inner .project-nav .element .wrap img {
         width: 100%; }
 
+#contact .platform-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  #contact .platform-list .element {
+    width: 100px; }
+    #contact .platform-list .element a {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #fff;
+      text-decoration: none; }
+      #contact .platform-list .element a p {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0.5em 0em; }
+#contact .mail-list .wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  #contact .mail-list .wrap .element .inner {
+    display: flex;
+    justify-content: flex-start; }
+
 /*# sourceMappingURL=home.css.map */

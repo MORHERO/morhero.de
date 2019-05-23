@@ -24,7 +24,7 @@
             
         </div>
         <div class="imgbox">
-            <img src="assets/media/img/prototype/1000x1000.png">
+            <img src="assets/media/img/prototype/1000x1000.png" class="head">
             <img src="assets/media/img/prototype/100x100.png" class="eye left">
             <img src="assets/media/img/prototype/100x100.png" class="eye right">
         </div>

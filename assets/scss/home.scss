@@ -86,3 +86,57 @@
         }
     }
 }
+
+// CONTACT
+
+#contact {
+    .platform-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .element {
+            width: 100px;
+            a {
+                display: flex;
+                justify-content:center;
+                flex-wrap: wrap;
+                color: $font-color;
+                text-decoration: none;
+                img {
+
+                }
+                p {
+                    text-align: center;
+                    font-size: 1.5em;
+                    margin: 0.5em 0em;
+                }
+            }
+        }
+    }
+    .mail-list {
+        .wrap {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .element {
+                .inner {
+                    display: flex;
+                    justify-content: flex-start;
+                    .imgbox {
+                        h4 {
+
+                        }
+                    }
+                    .textbox {
+                        p {
+
+                        }
+                        span {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, .title {
 
 .section-headline {
   font-size: 6em;
-  text-align: center; }
+  text-align: center;
+  margin-top: 1.5em; }
 
 main {
   max-width: 1980px;
