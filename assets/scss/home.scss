@@ -119,6 +119,8 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
             .element {
+                width: calc(30% - 2em);
+                margin: 1em;
                 .inner {
                     display: flex;
                     justify-content: flex-start;

@@ -13,17 +13,17 @@
 			</a>
 		</div >
 		<div class="element">
+			<a class="inner" href="#intro">
+				<div class="dev_icon">ICON_MONTH</div>
+				<p>Challenge</p>
+			</a>
+		</div >
+		<div class="element">
 			<a class="inner" href="#projects">
 				<div class="dev_icon">ICON_PROJECT</div>
 				<p>Projects</p>
 			</a>
 		</div >
-		<div class="element">
-			<a class="inner" href="#support">
-				<div class="dev_icon">ICON_MONEY</div>
-				<p>Support</p>
-			</a>
-		</div>
 		<div class="element">
 			<a class="inner" href="#contact">
 				<div class="dev_icon">ICON_CONTACT</div>

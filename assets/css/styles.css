@@ -35,6 +35,9 @@ header {
     header .inner .title {
       font-size: 12em;
       text-shadow: 0px 0px 10px; }
+  header .nav-holder {
+    display: block;
+    height: 250px; }
 
 nav {
   width: 100%;

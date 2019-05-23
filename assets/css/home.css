@@ -78,8 +78,11 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
-  #contact .mail-list .wrap .element .inner {
-    display: flex;
-    justify-content: flex-start; }
+  #contact .mail-list .wrap .element {
+    width: calc(30% - 2em);
+    margin: 1em; }
+    #contact .mail-list .wrap .element .inner {
+      display: flex;
+      justify-content: flex-start; }
 
 /*# sourceMappingURL=home.css.map */

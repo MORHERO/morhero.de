@@ -5,7 +5,7 @@ var footer_elem = document.getElementById("footer");
 
 var nav_trigger_y = header_elem.offsetHeight;
 
-
+console.log(nav_trigger_y);
 // window scroll triggers
 window.onscroll = function(e){
     var scroll_top = (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
