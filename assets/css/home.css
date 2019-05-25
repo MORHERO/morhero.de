@@ -28,6 +28,37 @@
         top: 0px;
         left: 100px; }
 
+#challenge .inner .current .progress {
+  display: flex; }
+  #challenge .inner .current .progress .box {
+    text-align: center;
+    flex-grow: 1;
+    padding-top: 1.25em; }
+    #challenge .inner .current .progress .box p {
+      margin: 0 1em; }
+  #challenge .inner .current .progress .progressbar {
+    position: relative;
+    width: 95%;
+    height: 50px;
+    margin: 20px auto;
+    border: 3px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-grow: 2; }
+    #challenge .inner .current .progress .progressbar span {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      padding-top: 3px; }
+    #challenge .inner .current .progress .progressbar .filler {
+      display: block;
+      position: absolute;
+      width: 56%;
+      height: 2.8em;
+      background: #000; }
+
 #project-showcase .inner {
   max-width: 1280px;
   margin: 0 auto; }
@@ -63,7 +94,8 @@
   justify-content: space-evenly;
   flex-wrap: wrap; }
   #contact .platform-list .element {
-    width: 100px; }
+    width: 100px;
+    padding: 1em; }
     #contact .platform-list .element a {
       display: flex;
       justify-content: center;

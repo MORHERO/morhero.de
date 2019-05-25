@@ -40,6 +40,49 @@
         }
     }
 }
+// challenge
+#challenge {
+    .inner {
+        .current {
+            .progress {
+                display: flex;
+                .box {
+                    text-align: center;
+                    flex-grow: 1;
+                    padding-top: 1.25em;
+                    p {
+                        margin: 0 1em;
+                    }
+                }
+                .progressbar {
+                    position: relative;
+                    width: 95%;
+                    height: 50px;
+                    margin: 20px auto;
+                    border: 3px solid #000;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    flex-grow: 2;
+                    span {
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 2em;
+                        font-weight: bold;
+                        padding-top: 3px;
+                    }
+                    .filler {
+                        display: block;
+                        position: absolute;
+                        width: 56%;
+                        height: 2.8em;
+                        background: #000;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //project-showcase
 #project-showcase {
@@ -96,6 +139,7 @@
         flex-wrap: wrap;
         .element {
             width: 100px;
+            padding: 1em;
             a {
                 display: flex;
                 justify-content:center;

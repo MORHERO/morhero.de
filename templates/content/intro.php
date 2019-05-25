@@ -6,19 +6,19 @@
             <div class="wrap">
                 <div class="text-segment">
                     <h3>Me:</h3>
-                    <p>das ist ein inhalts text</p>
+                    <p>I´m Marc (MORHERO) a web developer from Germany, Stuttgart.</p>
                 </div>
                 <div class="text-segment">
-                    <h3>interrests:</h3>
-                    <p>das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text</p>
+                    <h3>What im doing here:</h3>
+                    <p>This website is to show some of my private projects. This will be a place to find my projects get some background informations and also test some of them.</p>
                 </div>
                 <div class="text-segment">
-                    <h3>what im doing:</h3>
-                    <p>das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text das ist ein inhalts text</p>
+                    <h3>My experience:</h3>
+                    <p>My first experience with programming came pretty early while in school. Later i started .... </p>
                 </div>
                 <div class="text-segment">
-                    <h3>what i want:</h3>
-                    <p>das ist ein inhalts text das ist ein inhalts text</p>
+                    <h3>Other Interrests:</h3>
+                    <p>The most of my interrests besides programming are in the gaming section. Mostly CS:GO and a big love for Pen&Paper and Worldbuilding in general.</p>
                 </div>
             </div>
             

@@ -6,7 +6,7 @@ nav {
     z-index: 100;
     &.sticky {
         position: fixed;
-        margin-top:-8em;
+        margin-top:-5em;
         top: 0;
         &:hover {
             margin-top: 0;
@@ -40,15 +40,13 @@ nav {
                 align-items: center;
                 flex-direction: column;
                 text-decoration: none;
-                .dev_icon {
-                    width: 6em;
-                    height: 6em;
-                    background-color: #FFF;
+                img {
+                    width: 3em;
+                    height: 3em;
                     display: block;
-                    color:#000;
                 }
                 p {
-                    font-size: 3em;
+                    font-size: 2em;
                     margin:0;
                     color: $font_color;
                     &.active {

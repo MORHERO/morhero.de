@@ -2,31 +2,31 @@
 	<div class="inner">
 		<div class="element">
 			<a class="inner" href="http://localhost/morhero.de/">
-				<div class="dev_icon">ICON_HOME</div>
+				<img src="assets/media/img/icon/home.svg">
 				<p class="active">Home</p>
 			</a>
 		</div>
 		<div class="element">
 			<a class="inner" href="#intro">
-				<div class="dev_icon">ICON_ME</div>
+				<img src="assets/media/img/icon/info.svg">
 				<p>About me</p>
 			</a>
 		</div >
 		<div class="element">
 			<a class="inner" href="#intro">
-				<div class="dev_icon">ICON_MONTH</div>
+				<img src="assets/media/img/icon/clock.svg">
 				<p>Challenge</p>
 			</a>
 		</div >
 		<div class="element">
 			<a class="inner" href="#projects">
-				<div class="dev_icon">ICON_PROJECT</div>
+				<img src="assets/media/img/icon/code.svg">
 				<p>Projects</p>
 			</a>
 		</div >
 		<div class="element">
 			<a class="inner" href="#contact">
-				<div class="dev_icon">ICON_CONTACT</div>
+				<img src="assets/media/img/icon/send.svg">
 				<p>Contact</p>
 			</a>
 		</div>

@@ -3,16 +3,16 @@
 	<div class="platform-list">
 		<?php 
 		$contacts = array(
-			array('title' => '/morhero','img' => '100x100.png', 'link' => ''),
-			array('title' => '/morhero2','img' => '100x100.png', 'link' => ''),
-			array('title' => '/morhero3','img' => '100x100.png', 'link' => ''),
-			array('title' => '/morhero4','img' => '100x100.png', 'link' => ''),
-			array('title' => '/morhero5','img' => '100x100.png', 'link' => '')
+			array('title' => 'u/morhero','img' => 'Reddit_Mark_OnDark.svg', 'link' => 'https://www.reddit.com/user/MORHERO'),
+			array('title' => '/morhero','img' => 'Twitter_Logo_Blue.svg', 'link' => 'https://twitter.com/morhero'),
+			array('title' => 'id/morhero','img' => '../prototype/100x100.png', 'link' => 'https://steamcommunity.com/id/morhero'),
+			array('title' => '/morhero4','img' => '../prototype/100x100.png', 'link' => ''),
+			array('title' => '/morhero5','img' => '../prototype/100x100.png', 'link' => '')
 		);
 		foreach ($contacts as $key => $platform) { ?>
 			<div class="element">
 				<a href="<?php echo($platform['link']); ?>">
-					<img src="assets/media/img/prototype/<?php echo($platform['img']); ?>">
+					<img src="assets/media/img/icon/<?php echo($platform['img']); ?>">
 					<p><?php echo($platform['title']); ?></p>
 				</a>
 			</div>
@@ -25,9 +25,7 @@
 				<?php 
 				$mails = array(
 					array('title' => 'Bugs & Problems', 'mail' => 'dev@morhero.de', 'description' => 'Lorem ipsum idont care amet sit dolor ipsum', 'img' => '100x100.png'),
-					array('title' => 'Help', 'mail' => 'support@morhero.de', 'description' => 'Lorem ipsum idont care amet sit dolor ipsum', 'img' => '100x100.png'),
-					array('title' => 'Casual talking', 'mail' => 'contact@morhero.de', 'description' => 'Lorem ipsum idont care amet sit dolor ipsum', 'img' => '100x100.png'),
-					array('title' => 'geschäftlich', 'mail' => 'bussiness@morhero.de', 'description' => 'Lorem ipsum idont care amet sit dolor ipsum', 'img' => '100x100.png'),
+					array('title' => 'Main Contact', 'mail' => 'contact@morhero.de', 'description' => 'Lorem ipsum idont care amet sit dolor ipsum', 'img' => '100x100.png'),
 					array('title' => 'harrasment', 'mail' => 'spam@morhero.de', 'description' => 'Lorem ipsum idont care amet sit dolor ipsum', 'img' => '100x100.png' )
 				);
 				foreach ($mails as $key => $mail) { ?>
