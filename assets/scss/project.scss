@@ -2,7 +2,7 @@
 
 .project-list {
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-evenly;
     flex-wrap:wrap;
     .element {
         width: 512px;
@@ -12,20 +12,23 @@
         // dev
         background-image: url('../media/img/prototype/1024x576.png');
         background-size: cover;
+        background-blend-mode: saturation;
         a {
             color: $font_color;
             text-decoration: none;
             .inner {
                 display: flex;
+                position: relative;
                 flex-direction: column;
                 justify-content: space-between;
                 height: calc(100% - 2em);
                 padding: 1em;
                 cursor:pointer;
+                background-color: rgba(0,0,0,0.75);
                 &:hover {
                     h3 {
-                        margin-top:1em;
-                        font-size:4em;
+                        margin-top:0.5em;
+                        font-size:3.5em;
                     }
                 }
                 h3 {
@@ -35,8 +38,24 @@
                     transition: margin 300ms ease, font-size 300ms ease;
                 }
                 .description {
+                    position: absolute;
+                    bottom: 2em;
                     max-height: 4em;
                     overflow: hidden;
+                }
+                .taglist {
+                    position: absolute;
+                    bottom: 1em;
+                    .tag {
+                        border-radius: 0.75em;
+                        padding: 0.25em 0.5em;
+                        &.g {background-color: #207320;}
+                        &.y {background-color: #d8c309;}
+                        &.o {background-color: #d68a00;}
+                        &.dg {background-color: $darken_bg;}
+                        &.lg {background-color: $lighten_bg;}
+                        &.b {background-color: #181888;}
+                    }
                 }
             }
         }

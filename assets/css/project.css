@@ -1,6 +1,6 @@
 .project-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-wrap: wrap; }
   .project-list .element {
     width: 512px;
@@ -8,27 +8,50 @@
     height: 288px;
     margin: 1em;
     background-image: url("../media/img/prototype/1024x576.png");
-    background-size: cover; }
+    background-size: cover;
+    background-blend-mode: saturation; }
     .project-list .element a {
       color: #fff;
       text-decoration: none; }
       .project-list .element a .inner {
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: space-between;
         height: calc(100% - 2em);
         padding: 1em;
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.75); }
         .project-list .element a .inner:hover h3 {
-          margin-top: 1em;
-          font-size: 4em; }
+          margin-top: 0.5em;
+          font-size: 3.5em; }
         .project-list .element a .inner h3 {
           text-align: center;
           font-size: 3em;
           margin: 0.5em 0;
           transition: margin 300ms ease, font-size 300ms ease; }
         .project-list .element a .inner .description {
+          position: absolute;
+          bottom: 2em;
           max-height: 4em;
           overflow: hidden; }
+        .project-list .element a .inner .taglist {
+          position: absolute;
+          bottom: 1em; }
+          .project-list .element a .inner .taglist .tag {
+            border-radius: 0.75em;
+            padding: 0.25em 0.5em; }
+            .project-list .element a .inner .taglist .tag.g {
+              background-color: #207320; }
+            .project-list .element a .inner .taglist .tag.y {
+              background-color: #d8c309; }
+            .project-list .element a .inner .taglist .tag.o {
+              background-color: #d68a00; }
+            .project-list .element a .inner .taglist .tag.dg {
+              background-color: #222; }
+            .project-list .element a .inner .taglist .tag.lg {
+              background-color: #444; }
+            .project-list .element a .inner .taglist .tag.b {
+              background-color: #181888; }
 
 /*# sourceMappingURL=project.css.map */

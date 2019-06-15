@@ -1,16 +1,13 @@
 #intro .inner {
   display: flex;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
   #intro .inner .textbox {
     flex-basis: calc(50% - 2.5em);
     min-width: 500px;
-    margin: 1em 0.5em 1em 2em; }
-    #intro .inner .textbox .wrap {
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      justify-content: space-evenly; }
+    margin: 1em 0.5em 1em 2em;
+    flex: auto; }
   #intro .inner .imgbox {
     flex-basis: calc(50% - 2.5em);
     min-width: 500px;
@@ -41,8 +38,9 @@
     width: 95%;
     height: 50px;
     margin: 20px auto;
-    border: 3px solid #000;
+    border: 3px solid #222;
     border-radius: 5px;
+    background-color: #222;
     overflow: hidden;
     flex-grow: 2; }
     #challenge .inner .current .progress .progressbar span {
@@ -57,41 +55,68 @@
       position: absolute;
       width: 56%;
       height: 2.8em;
-      background: #000; }
+      background: #444; }
+#challenge .inner .past .past-list {
+  display: flex; }
+  #challenge .inner .past .past-list .element {
+    flex-basis: 150px; }
+    #challenge .inner .past .past-list .element .wrap {
+      padding: 1em;
+      border: 4px solid #444;
+      border-radius: 0.5em; }
+      #challenge .inner .past .past-list .element .wrap p:first-child {
+        margin-top: 0em; }
 
-#project-showcase .inner {
+#showcase .inner {
   max-width: 1280px;
   margin: 0 auto; }
-  #project-showcase .inner .showcase {
+  #showcase .inner .show-list {
     display: flex;
-    justify-content: center; }
-    #project-showcase .inner .showcase .imgbox {
-      flex-basis: 40%; }
-      #project-showcase .inner .showcase .imgbox img {
-        width: 100%; }
-    #project-showcase .inner .showcase .textbox {
-      flex-basis: calc(60% - 1em);
-      padding-left: 1em; }
-  #project-showcase .inner .project-nav {
+    overflow-x: hidden; }
+    #showcase .inner .show-list .showcase {
+      display: flex;
+      justify-content: center;
+      flex: 0 0 100%; }
+      #showcase .inner .show-list .showcase .imgbox {
+        flex-basis: 40%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+        #showcase .inner .show-list .showcase .imgbox:before {
+          content: "";
+          display: block;
+          padding-top: 100%; }
+      #showcase .inner .show-list .showcase .textbox {
+        flex-basis: calc(60% - 1em);
+        padding-left: 1em; }
+  #showcase .inner .project-nav {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     margin-top: 2em; }
-    #project-showcase .inner .project-nav .element {
+    #showcase .inner .project-nav .element {
       height: 100px;
       width: 100px;
       padding: 0.25em;
       cursor: pointer; }
-      #project-showcase .inner .project-nav .element.active {
+      #showcase .inner .project-nav .element.active {
         background-color: #666 !important; }
-      #project-showcase .inner .project-nav .element:hover {
+      #showcase .inner .project-nav .element:hover {
         background-color: #444; }
-      #project-showcase .inner .project-nav .element .wrap img {
-        width: 100%; }
+      #showcase .inner .project-nav .element .wrap {
+        pointer-events: none; }
+        #showcase .inner .project-nav .element .wrap img {
+          width: 100%; }
+  #showcase .inner .view {
+    margin-top: 2em; }
+    #showcase .inner .view .wrap {
+      text-align: center; }
 
 #contact .platform-list {
   display: flex;
   justify-content: space-evenly;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
   #contact .platform-list .element {
     width: 100px;
@@ -99,22 +124,87 @@
     #contact .platform-list .element a {
       display: flex;
       justify-content: center;
+      -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
       color: #fff;
       text-decoration: none; }
+      #contact .platform-list .element a img {
+        max-width: 150px;
+        max-height: 150px; }
       #contact .platform-list .element a p {
         text-align: center;
         font-size: 1.5em;
         margin: 0.5em 0em; }
+    #contact .platform-list .element:hover a {
+      text-decoration: underline; }
 #contact .mail-list .wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
   #contact .mail-list .wrap .element {
     width: calc(30% - 2em);
     margin: 1em; }
-    #contact .mail-list .wrap .element .inner {
-      display: flex;
-      justify-content: flex-start; }
+    #contact .mail-list .wrap .element div:first-child {
+      width: 4em; }
+      #contact .mail-list .wrap .element div:first-child img {
+        width: 100%; }
+
+#info-dock {
+  position: fixed;
+  left: 100%;
+  top: 20%;
+  padding: 1em;
+  background-color: #222;
+  transition: left 300ms ease;
+  z-index: 1000; }
+  #info-dock .inner {
+    position: relative; }
+    #info-dock .inner .out {
+      position: absolute;
+      left: -117px;
+      top: -1em;
+      background-color: #222;
+      padding-bottom: 2px;
+      cursor: pointer; }
+      #info-dock .inner .out pre {
+        pointer-events: none; }
+    #info-dock .inner .in {
+      width: 200px; }
+  #info-dock.open {
+    left: calc(100% - (200px + 2em)); }
+
+.img-text-block {
+  margin-top: 100px; }
+  .img-text-block .inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .img-text-block .inner .img-box {
+      flex-basis: calc(60% - 4em); }
+      .img-text-block .inner .img-box img {
+        width: 100%; }
+    .img-text-block .inner .text-box {
+      flex-basis: 40%; }
+
+@media only screen and (max-width: 1200px) {
+  #intro .inner .textbox {
+    flex-basis: 100%;
+    min-width: inherit;
+    margin: 0; }
+
+  .img-text-block .inner {
+    justify-content: center; }
+    .img-text-block .inner .text-box {
+      flex-basis: 100%; } }
+@media only screen and (max-width: 980px) {
+  #intro .inner {
+    display: block; }
+
+  #contact .mail-list .wrap {
+    display: block; }
+    #contact .mail-list .wrap .element {
+      width: 100%;
+      margin: 4em 2em; } }
 
 /*# sourceMappingURL=home.css.map */

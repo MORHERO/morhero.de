@@ -1,18 +1,19 @@
 <?php
-    $start_time = date_create('2019-05-11');
+    $start_time = date_create('2019-06-12');
     $current_time = date_create();
-    $end_time = date_create('2019-06-11');
+    $end_time = date_create('2019-07-12');
     $time_diff_full = date_diff($start_time, $end_time);
-    $time_diff_now = date_diff($current_time, $end_time);
-    $progress = round(((int)$time_diff_now->format('%a') / (int)$time_diff_full->format('%a')) * 100, 2);
+    $time_diff_now = date_diff($start_time, $current_time);
+    $progress = round(((int)$time_diff_now->format('%a') / ((int)$time_diff_full->format('%a')) * 100), 2);
+
 ?>
 <section id="challenge">
     <h2 class="section-headline">Month Challenge</h2>
-    <p class="description">The monthly challenge is a thing i made for myself to give me deadlines. I will try to release something every month. What will be released could be anything. For example a website, a game demo just a update or something completly different i wanted to create.</p>
+    <p class="description">The monthly challenge is a thing i made for myself to give me deadlines. I will try to release something every month. What will be released could be anything. From a website, a game demo, just a update to something completely different I wanted to create.</p>
     <div class="inner">
         <div class="current">
             <h3>Current Month</h3>
-            <p class="teaser">This month im working on a beta version of a little Clicker Game</p>
+            <p class="teaser">This month im working on the Beta version of Bugclicker.</p>
             
             <div class="progress">
                 <div class="box start">
@@ -36,7 +37,7 @@
                     <div class="wrap">
                         <p>June</p>
                         <p>morhero.de</p>
-                        <a href="">See more</a>
+                        <a href="" class="">See more</a>
                     </div>
                 </div>
 
